@@ -1,0 +1,46 @@
+.main-block_staff_information{
+    margin: 20px;
+    background-color: azure;
+
+}
+
+.main-block_staff_picture{
+    width: 270px;
+    height: 270px;
+    margin-bottom: 20px;
+}
+
+.pict{
+    width: 270px;
+    height: 270px;
+}
+
+.main-block_staff_picture-hovered{
+    width: 270px;
+    height: 270px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    visibility: hidden;
+
+}
+
+span{
+    display: block;
+}
+
+.text{
+    margin-left: 0px;
+}
+
+.main-block_staff_information:hover .pict{
+    display: none;
+
+}
+
+.main-block_staff_information:hover .main-block_staff_picture-hovered{
+    visibility: visible;
+
+}

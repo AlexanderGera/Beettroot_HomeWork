@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+.wrapper{
+    width: 80%;
+    padding-top: 120px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.block-header{
+    font-family: 'Delius Unicase';
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+
+.architect-block{
+    margin-bottom: 50px;
+}
+
+.architect-content-block{
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(3, 370px);
+    grid-gap: 30px;
+    justify-content: center;
+   
+}
+
+.architect-short-unit-blur {
+    width: 370px;
+    height: 370px;
+    background-image: url(../img/blur_small.png);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+ 
+
+
+.unit-author-name{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.unit-date{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 400;
+    color: #E0E0E0;
+
+}
+
+.architect-long-unit-blur{
+    width: auto;
+    height: 370px;
+    background-image: url(../img/blur_big.png);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   
+
+}
+
+
+.unit-button-icons-not-visible{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: none;
+}
+
+
+.hart_button{
+    width: 40px;
+    height: 40px;
+    background-color: #E0E0E0;
+    background-image: url(../img/hart.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    border: none;
+    opacity: 0.6;
+     
+}
+
+.dawnload_button{
+    width: 40px;
+    height: 40px;
+    background-color: #E0E0E0;
+    background-image: url(../img/download.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    border: none; 
+    opacity: 0.6;
+    
+}
+
+.hart_button:hover, .dawnload_button:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.block-unit-author-and-date-hovered{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: none;
+
+
+}
+
+.block-unit-author-and-date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+
+}
+
+.architect-short-picture {
+    border-radius: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.architect-short-picture:hover > .architect-short-unit-blur{
+    display: none;
+}
+
+.architect-short-picture:hover > .unit-button-icons-not-visible{
+    display: flex;
+
+}
+
+.architect-short-picture:hover > .block-unit-author-and-date-hovered{
+    display: flex;
+
+}
+
+
+.architect-long-picture{
+    border-radius: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+
+.architect-long-picture:hover > .architect-long-unit-blur{
+    display: none;
+}
+
+.architect-long-picture:hover > .unit-button-icons-not-visible{
+    display: flex;
+
+}
+
+.architect-long-picture:hover > .block-unit-author-and-date-hovered{
+    display: flex;
+
+}
+
+
+.short-pict-1 {
+    background-image: url(../img/image-1.png);
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+   
+}
+
+.long-pict-2 {
+    background-image: url(../img/image-2.png);
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    
+}
+
+
+.long-pict-3 {
+    background-image: url(../img/image-3.png);
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    
+}
+
+.short-pict-4 {
+    background-image: url(../img/image-4.png);
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+       
+}
+
+.short-pict-5 {
+    background-image: url(../img/image-5.png);
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+   
+}
+
+
+.long-pict-6 {
+    background-image: url(../img/image-6.png);
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+}
+
+
+

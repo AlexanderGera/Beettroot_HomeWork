@@ -1,0 +1,310 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header_wrapper{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    margin-bottom: 70px;
+    text-align: center;
+    margin: 0 auto;
+    
+   
+}
+
+.header_content{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    
+
+}
+
+.header_logo{
+    float: left;
+       
+}
+
+.logo{
+    width: 34px;
+    height: 32px;
+    margin-right: 12px;
+    margin-top: 24px;
+    }
+
+.name{
+    margin-top: 27px;
+    
+}
+
+.navi{
+    
+    font-size: 16px;
+    font-weight: 400;
+    color: #2F281E;
+    line-height: 75px;
+    text-align: left;
+    float: left;
+      
+}
+
+
+.navi span{
+    margin-right: 20px;
+}
+
+/* .header_buttons{
+text-align: left;
+} */
+.header_buttons{
+    text-align: left;
+}
+.hed_button{
+    width: 110px;
+    height: 46px;
+    margin-top: 16px;
+    margin-right: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2F281E;
+    border: 1px solid rgb(194, 194, 194);
+}
+
+.button_sign_up{
+    color: #fff;
+    border: none;
+    background-color: #FF9900;
+}
+
+.intro{
+    width: 1200px;
+    height: 495px;
+    margin: auto;
+    background-image: url(../images/bg_image.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 100px;
+    
+}
+
+.text_part_intro{
+    position: relative;
+    top: 100px;
+}
+
+.h1_intro{
+    display: block;
+    width: 500px;
+    height: 110px;
+    font-size: 44px;
+    font-weight: 700;
+    color: #2F281E;
+    
+    }
+
+.text_intro{
+    display: block;
+    width: 500px;
+    height: 91px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #544837;
+    margin-bottom: 20px;
+
+}
+
+.intro_button{
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    background-color: #FF9900;
+    }
+    
+
+/* .picture_intro{
+    position: relative;
+    margin-right: 400px;
+    width: 644px;
+    height: 495px;
+    background-image: url(../images/bg_image.png);
+       
+} 
+не получилось позиционировать справа в секции
+*/
+
+
+.block-tools-design {
+    width: 1440px;
+    height: 510px;
+    margin: 0 auto;
+    background-image: url(../images/bg_tools_design_block.png);
+    background-repeat: no-repeat;
+    background-position-y: 100px;
+       
+}
+
+.block-tools-design_header{
+    width: 540px;
+    height: 88px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+   
+}
+
+.tools-design_header_h1{
+    font-size: 36px;
+    font-weight: 700px;
+}
+
+.tools-design-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+ 
+}
+
+
+
+.design-skills_unit{
+    width: 270px;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.design-skills-unit_pict{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.design-skills-unit_header{
+    font-size: 22px;
+    font-weight: 600px;
+    margin-bottom: 16px;
+}
+
+.design-skills-unit_text{
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 26px;  
+    text-align: left;
+}
+
+
+.block-tools-design_button{
+   text-align: center;
+}
+
+
+.block-tools-design-button_style{
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;    
+    color: #fff;
+    border: none;
+    background-color: #FF9900;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer_wrapper{
+    width: 1200px;
+    height: 210px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+
+.footer-logo{
+    margin-right: 0;
+    margin-top: 0;
+    }
+
+.footer-name{
+    margin-top: 0;
+    
+}
+
+.footer-block_quick-links{
+    width: 135px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-block_legal-staff{
+    width: 135px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.footer-block_form-button{
+    width: 340px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.footer-title{
+    font-size: 20px;
+    font-weight: 700px;
+    line-height: 30px;  
+    
+}
+
+.footer-text{
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 26px;  
+    
+}
+
+input{
+    width: 340px;
+    height: 50px;
+    border-color: #BCD0E5;
+    border-radius: 5px;
+}
+
+.button_sign_up{
+    width: 180px;
+    height: 50px;
+ 
+}
+
+.footer_wrapper .footer-title{
+    margin-bottom: 30px;
+}
+
+

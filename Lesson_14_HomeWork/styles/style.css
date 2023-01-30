@@ -1,0 +1,167 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: url(../img/bg-picture.png) no-repeat;
+    background-position: 1150px 150px;
+    background-attachment: fixed;
+    
+    
+}
+
+.header {
+    width: 80%;
+    max-width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+
+}
+
+.header-navig-lang {
+    font-family: 'Tourney', cursive;
+    font-size: 22px;
+    font-weight: 600;
+    margin-right: 100px;
+}
+
+.header-navig-menu {
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.navig-menu-first-item::after{
+    content: " / ";
+}
+
+.header-logo {
+    width: 238px;
+    height: 54px;
+    background: url(../img/company-logo-black.svg);
+     
+}
+
+
+.main-content{
+    display: grid;
+    grid-template-columns: 385px 785px;
+    grid-template-rows: auto;
+    grid-column-gap: 30px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-navigation-sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 0 10px;
+    position: fixed;
+
+}
+
+.main-content-wrapper {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.sidebar-menu-item {
+    display: block;
+    width: 365px;
+    height: 60px;
+    margin-bottom: 80px;
+    border-bottom: 1px solid rgb(183, 183, 183);
+
+}
+
+.main-content-item {
+    margin-bottom: 70px;
+}
+
+.main-content-item-header {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.main-content-item-title {
+    font-family: 'Francois One', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+   
+}
+
+
+.content-item-title-decoration:before {
+content: "";
+position: absolute;
+top: -20px;
+width: 100px;
+height: 8px;
+background: #000000;
+
+}
+
+.item-title-chapter {
+    font-family: 'Farro', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 2px;
+    vertical-align: top;
+}
+
+
+.main-content-item-article{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.article-text-underline {
+    text-decoration: underline;
+}
+
+.article-text-italic {
+    font-style: italic;
+}
+
+.article-text-bold {
+    font-weight: 700;
+}
+
+.article-text-background {
+    background-color: #C9C9C9;
+}
+/* 
+.article-text-background::before {
+    content:"<Text>";
+}
+
+.article-text-background::after {
+    content:"</Text>";
+} */
+
+
+p {
+    margin-bottom: 40px;
+}
+

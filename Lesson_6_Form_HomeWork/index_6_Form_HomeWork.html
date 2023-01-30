@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</Form></title>
+<style type="text/css">
+
+.form_holder{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 500px;
+    height: 600px;
+    background-color: rgba(215, 215, 215, 0.867);
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+       
+}
+
+.name_of_form{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-bottom: 15px;
+
+}
+
+button{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(225, 255, 245);
+    border: 2px solid rgb(189, 171, 220);
+    border-radius: 10px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+button:hover{
+cursor: pointer;
+border: 2px solid rgb(119, 46, 244);
+background-color: rgb(172, 252, 225);
+transition: 0.5s;
+}
+
+</style>
+</head>
+<body>
+<div class="form_holder">
+<form action="">
+    <div class="name_of_form">
+        <label for="fio">Полное имя</label>
+        <input id="fio" type="text" class="area_for_data" name="FullName" placeholder="Укажите свое имя">
+    </div>
+    <div class="name_of_form">
+        <label for="email">E-mail</label>
+        <input id="email" type="email" class="area_for_data" name="E-mail" placeholder="Введите свой E-mail">
+    </div>
+    <div class="name_of_form">
+        <label for="password">Пароль</label>
+        <input id="password" type="password" class="area_for_data" name="Pass" placeholder="Введите пароль">
+    </div>
+    <div class="name_of_form">
+        <label for="password_confirm">Подтверждение пароля</label>
+        <input id="password_confirm" type="password" class="area_for_data" name="PassConfirm" placeholder="Повторите пароль">
+    </div>
+    <div class="name_of_form">
+        <span>Пол</span>
+        <label><input type="radio" class="area_for_data" name="sex" value="Man">Мужчина</label>
+        
+        <label><input type="radio" name="sex" value="Women">Женчина</label>
+        
+        
+    </div>
+    <div class="name_of_form">
+        <label for="age">Возраст</label>
+        <input type="number" id="age" class="area_for_data">
+    </div>
+    <div class="name_of_form">
+        <label for="kurs">Курс</label>
+        <select name="" id="kurs" class="area_for_data">
+            <option>Выберите курс</option>
+            <option value="Front-End">Front-End</option>
+            <option value="Back-End">Back-End</option>
+            <option value="Project">Project Management</option>
+            <option value="QA">QA Manual</option>
+        </select>
+    
+    </div>
+    <div class="name_of_form">
+        <label for="address">Полный адрес</label>
+        <textarea name="" id="address" rows="5" placeholder="Страна, город, адрес" class="area_for_data" name="FullAdd"></textarea>
+        
+    </div>
+    <div class="name_of_form">
+    <label for=""><input type="checkbox" value="OK">Я согласен с обработкой персональных данных</label>
+    </div>
+    <div>
+        <button type="submit" value="Send">Зарегестрироваться</button>
+        <button type="reset">Сбросить текст</button>
+        
+    </div>
+
+
+
+</form>
+</div>
+    
+
+
+</body>
+</html>
