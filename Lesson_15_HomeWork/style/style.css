@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+.wrapper {
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.main-content {
+    width: 80%;
+    min-width: 1200px;
+    margin: 0 auto;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+
+.main-content-block {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 590px;
+    padding: 35px;
+    background: rgb(255, 255, 255);
+    gap: 20px;
+}
+
+.block-title {
+    font-size: 24px;
+    font-weight: 500;
+   
+}
+
+
+
+.main-content-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.names-holder, .residence-holder, .contacts-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.label {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.label-radio {
+    display: inline-block;
+}
+
+.input-field {
+    display: block;
+    width: 245px;
+    height: 40px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+
+}
+
+.input-field-large {
+    width: 100%;
+    margin-bottom: 7px; 
+}
+
+.email-input-filed-description {
+    font-size: 13px;
+    font-weight: 400;
+
+}
+
+.input-field:focus-visible {
+    outline: 2px solid #007BFF;
+}
+
+.form-buttons {
+    width: 150px;
+    height: 38px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 6px;
+}
+
+.form-buttons, .send-picture-button, .delet-picture-button, .label-radio:hover {
+    cursor: pointer;
+}
+.button-large {
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.terms-holder {
+    text-align: center;
+}
+
+.large-terms-text-block {
+    width: 100%;
+    border-bottom: 1px solid #E4E4E4;
+    margin-bottom: 20px;
+}
+.terms-text-large {
+    display: block;
+    margin: 0 auto;
+    width: 410px;
+    height: 40px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    
+}
+
+.picture-holder {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+    
+}
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    
+    
+}
+
+.send-picture-field {
+    width: 145px;
+    height: 30px;
+    font-size: 11px;
+    font-weight: 400;
+
+    
+
+}
+
+.picture-holder {
+    position: relative;
+}
+
+
+.send-picture-button {
+    width: 15px;
+    height: 15px;
+    background: url('../images/Photo_Camera.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: none;
+    position: relative;
+    right: 20px;
+
+}
+
+.delet-picture-button {
+    width: 30px;
+    height: 30px;
+    background: url('../images/Trash.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+}

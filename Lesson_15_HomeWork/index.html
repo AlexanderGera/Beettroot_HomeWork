@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+    <main class="main-content">
+            <div class="main-content-block make-account-item">
+                <span class="block-title">Create an Account</span>
+                <form class="main-content-form" action="">
+                    <div class="names-holder">
+
+                        <div class="holder-item">
+                            <label for="fname" class="label">First Name</label>
+                                <input type="text" name="fname" id="fname" class="input-field">
+                        </div>
+                        <div class="holder-item">
+                            <label for="lname" class="label">Last Name</label>
+                                <input type="text" id="lname" name="lname" class="input-field">
+                        
+                        </div>
+                    </div>
+                    <div class="email-holder">
+                        <label for="email" class="label">E-mail</label>
+                            <input type="email" id="email" name="email" class="input-field input-field-large">
+                        
+                        <span class="email-input-filed-description">We'll never share your email with anyone else.</span>
+                    </div>
+                    <div class="gender-holder">
+                        <label class="label label-radio">
+                            <input type="radio" name="gender" value="male">
+                            Male
+                        </label>
+                        <label class="label label-radio">
+                            <input type="radio" name="gender" value="female">
+                            Female
+                        </label>
+                    </div>
+                    <div class="residence-holder">
+                        <div class="holder-item">
+                            <label class="label" for="country">Country</label>
+                                
+                            
+                                <select name="country" id="country" class="input-field">
+                                    <option value="">Select your Coutry</option>
+                                    <option value="1">Kiev</option>
+                                    <option value="2">Munich</option>
+                                    <option value="3">London</option>
+                                    <option value="4">New-York</option>
+                                </select>
+                        </div>
+                        <div class="holder-item">
+                            <label for="city" class="label">City</label>
+                                <input type="text" id="city" name="city" class="input-field">
+                        </div>
+                    </div>
+                    <input type="button" value="Sign Up" class="form-buttons button-large">
+                    
+                </form>
+                    <div class="terms-holder">
+
+                        <div class="large-terms-text-block">
+                            <span class="terms-text-large">By clicking the 'Sign Up' button, you confirm that you 
+accept our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+                            </span>
+                        </div>
+                        <span class="terms-text">Have an account?</span>
+                        <span class="terms-text"><a href="#">Log In</a></span>
+                    </div>
+
+
+            </div>
+            <div class="main-content-block profile-item">
+                <span class="block-title">Profile</span>
+                    <form class="main-content-form" action="">
+                        <div class="picture-holder">
+                            <img src="images/📷 Image.png" class="profile-picture">
+                                
+                                <input type="text" name="sendpict" class="input-field send-picture-field" placeholder="Up to 1 MB (300x300 px)">
+                                <input type="button" value="" class="send-picture-button">
+                                <input type="button" value="" class="delet-picture-button">
+                        </div>
+                        <div class="names-holder">
+
+                            <div class="holder-item">
+                                <label class="label" for="name">Name</label>
+                                    <input type="text" id="name" name="name" class="input-field">
+                            </div>
+
+                            <div class="holder-item">
+                                <label for="emailupdate" class="label">E-mail</label>
+                                <input type="email" id="emailupdate" name="prof-email" class="input-field">
+                            </div>
+                            
+                        </div>
+                        <div class="residence-holder">
+                        
+                            <div class="holder-item">
+                                <label class="label" for="countryupdate">Country</label>
+                                <select name="country" id="countryupdate" class="input-field">
+                                        <option value="">Select your Coutry</option>
+                                        <option value="1">Kiev</option>
+                                        <option value="2">Munich</option>
+                                        <option value="3">London</option>
+                                        <option value="4">New-York</option>
+                                </select>
+                                
+                            </div>
+                            <div class="holder-item">
+                                
+                                <label for="cityupdate" class="label">City</label>
+                                    <input type="text" id="cityupdate" name="city" class="input-field">
+                                
+                            </div>
+                        </div>
+                        <div class="contacts-holder">
+                            <div class="holder-item">
+                                <label class="label" for="zipcode">Zip Code</label>
+                                <input type="text" id="zipcode" name="zipcode" class="input-field">
+                            </div>
+                        
+                            <div class="holder-item">
+                            <label for="telnumber" class="label">Phone Number</label>
+                                <input type="tel" id="telnumber" name="tel-number" class="input-field">
+                            
+                            </div>
+                        </div>
+                        <input type="button" value="Update" class="form-buttons">
+
+                    </form>
+                
+            </div>
+    </main>
+    </div>
+    
+</body>
+</html>
