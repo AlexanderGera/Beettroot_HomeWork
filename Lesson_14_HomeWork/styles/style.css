@@ -31,6 +31,11 @@
 
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .header-navig-lang {
     font-family: 'Tourney', cursive;
     font-size: 22px;
