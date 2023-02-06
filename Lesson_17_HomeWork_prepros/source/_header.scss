@@ -1,0 +1,72 @@
+
+// Variables
+
+$primary-gold-color: #FFCC00;
+$primary-titels-color: #666666;
+$primary-text-color: #333333;
+$sub-text: #898F8F;
+$primary-text-font: 'Raleway', sans-serif;
+$primary-titels-text-fonts: 'Roboto', sans-serif;
+
+// Mixins
+@mixin hor_divider_line {
+    width: 210px;
+    height: 1px;
+    background-color: $primary-gold-color;
+
+}
+
+
+.header {
+    width: 450px;
+    height: 160px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+        &__name{
+            display: flex;
+            flex-direction: column;
+
+        
+            }
+
+        &__sub-title {
+            font-size: 18px;
+            font-weight: 500;
+            font-family: $primary-text-font;
+            color: $sub-text;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            }
+
+        &__title {
+            font-size: 60px;
+            font-weight: 900;
+            font-family: $primary-titels-text-fonts;
+            color: $primary-gold-color;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        &__block-divider {
+            width: 450px;
+            height: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center
+        }
+
+        &__block-divider-line {
+            @include hor_divider_line;
+        }
+
+        &__block-divider-icon {
+            width: 20px;
+            height: 20px;
+            background: url('../images/bonfire-sharp_icon.png');
+            background-repeat: no-repeat;
+        }
+
+}

@@ -1,0 +1,204 @@
+
+// Variables
+
+$primary-gold-color: #FFCC00;
+$primary-titels-color: #666666;
+$primary-text-color: #333333;
+$sub-text: #898F8F;
+$primary-text-font: 'Raleway', sans-serif;
+$primary-titels-text-fonts: 'Roboto', sans-serif;
+
+// Mixins
+
+@mixin hor_divider_line {
+    width: 210px;
+    height: 1px;
+    background-color: $primary-gold-color;
+
+}
+
+@mixin icons-social-nets {
+    width: 30px;
+    height: 30px;
+
+}
+
+
+// Import header'a
+
+@import "_header";
+
+
+
+.wrapper{
+    width: 80%;
+    padding-top: 50px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.main-content {
+    width: 80%;
+    min-width: 1030px;
+    max-width: 1440px;
+    height: 510px;
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    align-items: center;
+
+		&__portret {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            padding: 15px;
+            justify-self: start;
+		}
+
+        &__portret-picture {
+            width: 400px;
+            height: 400px;
+            background: url('../images/photo.png');
+            background-repeat: no-repeat;
+            position: relative;
+
+
+            .portret-picture__corner {
+                position: absolute;
+            }
+
+
+            .top-left {
+                top: -15px;
+                left: -15px;
+                transform: rotate(270deg);   
+            }
+
+            .top-right {
+                top: -15px;
+                left: 315px;   
+            }
+
+            .bottom-left {
+                    top: 315px;
+                    left: -15px;
+                    transform: rotate(-180deg);
+            }
+
+            .bottom-right {
+                top: 315px;
+                left: 315px;
+                transform: rotate(90deg);
+                
+                
+            }
+
+
+        }
+
+		&__divider {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            width: 1px;
+            height: 510px;
+            background-color: $primary-gold-color;
+		}
+
+		&__text-wrapper {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+            padding: 15px;
+            justify-self: end;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+		}
+
+    
+    &__text-title {
+        display: block;
+        font-family: $primary-titels-text-fonts;
+        font-size: 36px;
+        font-weight: 900;
+        color: $primary-titels-color;
+        margin-bottom: 60px;
+
+    }
+
+    &__text-subtitle {
+        display: block;
+        font-family: $primary-text-font;
+        font-size: 24px;
+        font-weight: 400;
+        color: $primary-titels-color;
+        margin-bottom: 30px;
+
+    }
+
+    &__text-social-icons {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-bottom: 50px;
+
+
+            .social-icons-links {
+                display: block;
+                @include icons-social-nets;
+            }
+        
+
+    }
+
+    &__text {
+        width: 430px;
+        height: 116px;
+        font-family: $primary-text-font;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        color: $primary-text-color;
+        margin-bottom: 20px;
+        
+    }
+
+    &__text-slider {
+        width: 80px;
+        height: 4px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-bottom: 25px;
+
+
+            .slider-short {
+                width: 15px;
+                height: 4px;
+                background-color: $primary-gold-color;
+                cursor: pointer;
+            }
+
+            .slider-large {
+                width: 30px;
+                height: 4px;
+                background-color: $primary-gold-color;
+                cursor: pointer;
+
+            }
+
+    }
+
+}
+
+.button {
+    width: 120px;
+    height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid $primary-gold-color;
+    background-color: #fff;
+    cursor: pointer;
+}
