@@ -9,9 +9,9 @@
     width: 100%;
     margin: 0 auto;
     position: relative;
-    background: url(../img/bg-picture.png) no-repeat;
+    /* background: url(../img/bg-picture.png) no-repeat;
     background-position: 1150px 150px;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     
     
 }
@@ -71,6 +71,8 @@ a {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    background: url(../img/bg-picture.png) no-repeat;
+    background-position: 550px 0px;
 }
 
 .main-navigation-sidebar {
