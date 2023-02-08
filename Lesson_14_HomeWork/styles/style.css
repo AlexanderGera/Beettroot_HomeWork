@@ -9,9 +9,7 @@
     width: 100%;
     margin: 0 auto;
     position: relative;
-    /* background: url(../img/bg-picture.png) no-repeat;
-    background-position: 1150px 150px;
-    background-attachment: fixed; */
+
     
     
 }
@@ -71,8 +69,7 @@ a {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-    background: url(../img/bg-picture.png) no-repeat;
-    background-position: 550px 0px;
+
 }
 
 .main-navigation-sidebar {
@@ -83,10 +80,23 @@ a {
 
 }
 
+.background-picture {
+    position: absolute;
+    top: 0px;
+    left: 610px;
+    z-index: -1;
+    
+
+}
+
+
 .main-content-wrapper {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    z-index: 2;
+
 }
+
 
 .sidebar-menu-item {
     display: block;
