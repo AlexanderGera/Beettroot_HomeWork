@@ -1,0 +1,124 @@
+//variables
+$title-font: 'Red Hat Display', sans-serif;
+$primary-text-font: 'Lato', sans-serif;
+
+
+// Mixins
+
+@mixin fonts_header_menu {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    
+    a {
+        text-decoration: none;
+        color: #000;  
+    }  
+}
+
+
+
+.header {
+    width: calc(100% - (70px/2));
+    max-width: 1170px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+    &__logo {
+        width: 142px;
+        height: 12px;
+        
+    }
+
+    &__menu {
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include fonts_header_menu;
+        
+    
+    }
+
+// подчеркивание для ссылки не по всей длине слова а частичное
+
+    &__link {
+        display: block;
+        position: relative;
+    }
+
+    &__link:after {
+        content: "";
+        width: 70%;
+        height: 1px;
+        background: #000;
+        display: none;
+        position: absolute;
+        top: 15px;
+        //разместить посрдение слова (подчеркивание 30px разделить
+        // на два, или ширину подчеркивание разместить в процентах
+        // и остаток процентов разделить на два 
+        left: 15%;
+        
+    }
+
+
+    &__link:hover:after {
+        display: block;
+   
+    }
+
+    &__searching_icon {
+        width: 17px;
+        height: 16px;
+        
+    }
+
+}
+
+
+    .header__serch-hamburger-holder{
+        width: 100%;
+        max-width: 75px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .header__hamburger {
+        display: none;
+    }
+
+    .hamburger__bar {
+        display: block;
+        width: 34px;
+        height: 2px;
+        margin: 5px auto;
+        background-color: #000;
+
+    }
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 60px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__hamburger {
+        display: block;
+    }
+
+
+
+}
