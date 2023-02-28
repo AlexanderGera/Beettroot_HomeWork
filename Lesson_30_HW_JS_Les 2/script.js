@@ -31,7 +31,6 @@ userMoneyCalculator();
 // Для вирішення завдання тобі знадобиться оператор % (залишок від ділення).
 
 
-
 function getReversNumber() {
 
 let numberFromUser = +prompt('Введите трехзначное число');
@@ -41,7 +40,7 @@ let numberFromUser = +prompt('Введите трехзначное число')
     } else {
         let userNumberString = numberFromUser.toString();
         let numberSplit = userNumberString.split('');
-        
+
         // Осторожно: Реверс изменяет исходный массив
         let numberReverse = numberSplit.reverse();
         let numberReversedJoin = numberReverse.join('');
@@ -54,22 +53,46 @@ getReversNumber();
 
 
 
-// else if (!isNaN(numberFromUser))  {
+
+
+
+
+
+// function getReversNumber() {
+
+// let numberFromUser = +prompt('Введите трехзначное число');
+//     if (isNaN(numberFromUser)) {
+//         alert('Введите число');
+//         getReversNumber();
+
+//     } else if (!isNaN(numberFromUser)) {
 //         let userNumberString = numberFromUser.toString();
-// let userNumberLength = (numberFromUser.length);
-//     if (userNumberLength >= 4 || userNumberLength < 3 ) {
+
+//         //как запустить проверку в этом условиии и если true то проверять следующее условие?
+        
+        
+//     }
+
+//     if (userNumberString.length >= 4 || userNumberString.length < 3 ){
 //         alert('Введите ТРЕХ значное число');
-//     } else if (isNaN(numberFromUser)) {
+//         // как запустить повторение введения данных в конкретно этих условиях
 
-//         let userNumber = toString(numberFromUser);
-//         let numberSplit = userNumber.split('');
-
+       
+    
+//     }
+    
+//     else {
+        
+//         let numberSplit = userNumberString.split('');
+        
 //         // Осторожно: Реверс изменяет исходный массив
 //         let numberReverse = numberSplit.reverse();
 //         let numberReversedJoin = numberReverse.join('');
-
 //         alert(numberReversedJoin);
 //     }
+
+// }    
+
 
 
 
