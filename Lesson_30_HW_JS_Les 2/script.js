@@ -31,69 +31,38 @@ userMoneyCalculator();
 // Для вирішення завдання тобі знадобиться оператор % (залишок від ділення).
 
 
+//Как сделать через % я не понял. Сделал возможно через жопу. т.е. усложнил по максимуму. Как мне кажется.
+
+
 function getReversNumber() {
 
 let numberFromUser = +prompt('Введите трехзначное число');
     if (isNaN(numberFromUser)) {
         alert('Введите число');
         getReversNumber();
-    } else {
-        let userNumberString = numberFromUser.toString();
-        let numberSplit = userNumberString.split('');
 
+    } else if (!isNaN(numberFromUser)) {
+        let userNumberString = numberFromUser.toString();
+
+        if (userNumberString.length >= 4 || userNumberString.length < 3 ) {
+            alert('Введите ТРЕХ значное число');
+            getReversNumber();
+            
+        } else {
+            
+            let numberSplit = userNumberString.split('');
         // Осторожно: Реверс изменяет исходный массив
         let numberReverse = numberSplit.reverse();
         let numberReversedJoin = numberReverse.join('');
         alert(numberReversedJoin);
+
+        }
+
     }
 
 }    
 
 getReversNumber();
-
-
-
-
-
-
-
-
-// function getReversNumber() {
-
-// let numberFromUser = +prompt('Введите трехзначное число');
-//     if (isNaN(numberFromUser)) {
-//         alert('Введите число');
-//         getReversNumber();
-
-//     } else if (!isNaN(numberFromUser)) {
-//         let userNumberString = numberFromUser.toString();
-
-//         //как запустить проверку в этом условиии и если true то проверять следующее условие?
-        
-        
-//     }
-
-//     if (userNumberString.length >= 4 || userNumberString.length < 3 ){
-//         alert('Введите ТРЕХ значное число');
-//         // как запустить повторение введения данных в конкретно этих условиях
-
-       
-    
-//     }
-    
-//     else {
-        
-//         let numberSplit = userNumberString.split('');
-        
-//         // Осторожно: Реверс изменяет исходный массив
-//         let numberReverse = numberSplit.reverse();
-//         let numberReversedJoin = numberReverse.join('');
-//         alert(numberReversedJoin);
-//     }
-
-// }    
-
-
 
 
 
