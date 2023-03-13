@@ -1,8 +1,10 @@
 //variables
 
 //fonts
-$primary-text-font: 'Lato', sans-serif;
-$titels-text-font: 'Playfair Display', serif;
+$primary-text-font: 'Lato',
+sans-serif;
+$titels-text-font: 'Playfair Display',
+serif;
 
 //colors
 
@@ -15,6 +17,7 @@ $white-design-green-title-text-color: #85BBB1;
 $dark-design-blue-title-text-color: #689FF2;
 $dark-design-green-color: #53F3CD;
 $dark-design-green-color-hover: #02E0AB;
+
 
 
 //mixins
@@ -63,6 +66,15 @@ $dark-design-green-color-hover: #02E0AB;
     color: $white-design-primary-text-color;
     font-size: 18px;
     font-weight: 300;
+    line-height: 26px;
+
+}
+
+@mixin primary-text-white-font-decoration {
+    font-family: $primary-text-font;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 26px;
 
 }

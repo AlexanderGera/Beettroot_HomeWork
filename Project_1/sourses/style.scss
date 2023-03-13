@@ -15,6 +15,22 @@
     @include green-italic-title-font-decoration;
 }
 
+
+.general-white-text-decoration {
+    @include primary-text-white-font-decoration;
+
+}
+
+.italic-general-white-text {
+    font-family: $titels-text-font;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.08em;
+    color: #ffffff;
+}
+
 .wrapper {
     width: 100%;
     max-width: 1440px;
@@ -231,5 +247,45 @@
     background: url(../images/quote-background.png) no-repeat;
     background-position: center;
     margin: 0 9% 0 9%;
+    padding: 100px 0 0 160px;
 }
 
+.quote_information-holder_main-text {
+    width: 70%;
+    max-width: 650px;
+    display: block;
+    font-size: 32px;
+    line-height: 46px;
+    margin-bottom: 40px;
+    position: relative;
+
+}
+
+.quote_information-holder_main-text:before {
+    position: absolute;
+    content: url('../images/quote-background_icons.png');
+    top: -20px;
+    left: -55px;
+
+}
+
+.video_wrapper {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+}
+
+.video_information-holder {
+    max-width: 970px;
+    border: 1px solid #E4E4E4;
+    border-radius: 32px;
+    margin: 0 16% 0 16%;
+    padding: 31px 70px 31px 30px;
+}
+
+.video_youtube {
+    border-radius: 8px;
+    border: 1px solid #E4E4E4;
+}
