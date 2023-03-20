@@ -98,6 +98,7 @@
 }
 
 .button-orange:after {
+
     content: "";
     position: absolute;
     width: 112px;
@@ -205,11 +206,12 @@
 }
 
 .big-numbers_text {
-    // display: block;
+    display: block;
     @include prymary-title-font-decoration;
     font-size: 68px;
     line-height: 72px;
     position: relative;
+    margin-bottom: 10px;
 }
 
 
@@ -219,20 +221,19 @@
 }
 
 
-.big-numbers_text_description {
-    display: block;
+.big-numbers_text_green-line {
     position: relative;
 }
 
 
-.text_description_green-line:after {
+.big-numbers_text_green-line:after {
     display: block;
     content: "";
     width: 100px;
     height: 1px;
     background: $white-design-green-title-text-color;
     position: absolute;
-    top: 65px;
+    top: -45px;
     left: 125px;
 
 }
@@ -467,7 +468,7 @@
 }
 
 .picture-holder_item {
-    width: 370px;
+    max-width: 370px;
     min-height: 340px;
     background-position: center;
 
@@ -490,7 +491,7 @@
 
 .picture-holder_item_gradient {
     background: url(../images/overlay.png) no-repeat;
-    width: 370px;
+    max-width: 370px;
     min-height: 340px;
     background-position: center;
     padding-top: 30px;
@@ -579,7 +580,6 @@
 }
 
 .footer_items-holder {
-
     min-height: 85px;
     display: flex;
     flex-direction: row;
@@ -697,6 +697,11 @@
         padding: 17px 45px 17px 20px;
     }
 
+    .video_text-holder {
+        max-width: 970px;
+        margin: 0 9% 40px 9%;
+
+    }
 
     .features_picture-holder {
         width: 50%;
@@ -741,6 +746,14 @@
 
 @media screen and (max-width: 768px) {
 
+    .quote_wrapper,
+    .benefits_wrapper,
+    .video_wrapper,
+    .features_wrapper,
+    .contact_wrapper {
+        margin-bottom: 50px;
+    }
+
     .welcome-text_wrapper {
         width: 75%;
         margin-bottom: 80px;
@@ -753,16 +766,17 @@
     }
 
     .intro_wrapper {
-        position: unset;
+        position: static;
         display: flex;
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .intro_picture-holder {
-        width: 768px;
-        height: 700px;
+        width: 100%;
+        max-width: 768px;
+        height: 300px;
         margin: 0 5% 0 5%;
 
     }
@@ -770,7 +784,7 @@
     .intro_text-holder {
         width: 100%;
         min-height: auto;
-        position: unset;
+        position: static;
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -789,8 +803,16 @@
 
     }
 
-    .benefits_wrapper {
-        margin-bottom: 50px;
+    .right-column-holder_text {
+        margin-bottom: 30px;
+    }
+
+    .intro_button-orange {
+        align-self: center;
+    }
+
+    .big-numbers_text_green-line:after {
+        display: none;
 
     }
 
@@ -798,8 +820,12 @@
         margin-bottom: 30px;
     }
 
-    .benefits_title_decoration {
+    .general-title-decoration,
+    .general-title-green-decoration {
         font-size: 32px;
+    }
+
+    .benefits_title_decoration {
         margin-bottom: 15px;
     }
 
@@ -815,17 +841,194 @@
     .quote_information-holder {
         margin: 0 5% 0 5%;
         padding: 30px 0 0 60px;
+        height: 320px;
     }
 
     .quote_information-holder_main-text {
-
-
+        font-size: 24px;
         margin-bottom: 15px;
     }
 
     .video_youtube {
         height: 345px;
     }
+
+    .video_text-holder {
+        text-align: center;
+    }
+
+    .features_wrapper {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .features_picture-holder {
+        width: 100%;
+        max-width: 768px;
+        height: 200px;
+        margin: 0 5% 30px 5%;
+
+    }
+
+    .features_text-holder {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 768px;
+        min-height: 450px;
+        padding: 0px;
+        margin: 0 5% 0 5%;
+
+    }
+
+    .features_text_left-column-holder,
+    .features_text_right-column-holder {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .features_text_column-item {
+        max-width: 350px;
+        margin-bottom: 15px;
+    }
+
+    .features_text_column-item_title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .contact_information-holder {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact_column-holder {
+        width: 100%;
+        max-width: 768px;
+        align-items: center;
+
+    }
+
+}
+
+// responsive design for 475 px screen
+
+
+@media screen and (max-width: 475px) {
+
+    .benefits_rows_wraper {
+        flex-direction: column;
+    }
+
+    .general-title-decoration,
+    .general-title-green-decoration {
+        font-size: 28px;
+    }
+
+
+    .benefits_row_cells {
+        width: 100%;
+        min-height: auto;
+        text-align: center;
+
+    }
+
+    .quote_information-holder_main-text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .quote_information-holder_author-name {
+        font-size: 18px;
+    }
+
+    .features_wrapper {
+        margin-bottom: 30px;
+    }
+
+    .features_text_left-column-holder,
+    .features_text_right-column-holder {
+        width: 100%;
+    }
+
+    .picture-holder_item_gradient {
+        padding-top: 25px;
+        padding-left: 15px;
+    }
+
+    .video_youtube {
+        height: 200px;
+    }
+
+    .footer_items-holder {
+        flex-direction: column;
+
+    }
+
+}
+
+
+// responsive design for 320 px screen
+
+
+@media screen and (max-width: 360px) {
+
+    .welcome-text_title {
+        font-size: 32px;
+        line-height: 46px;
+    }
+
+
+    .welcome-text_wrapper {
+        text-align: center;
+        width: 90%;
+        margin-bottom: 50px;
+
+    }
+
+    .welcome-text_text {
+        margin-bottom: 30px;
+    }
+
+    .welcome-text_button {
+        width: 100%;
+        margin: 0 5% 0 5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .big-numbers_text {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    .general-text-decoration {
+        font-size: 14px;
+    }
+
+    .video_youtube {
+        height: 120px;
+    }
+
+    .intro_wrapper {
+        margin-bottom: 30px;
+    }
+
+    .intro_text-holder {
+        margin-bottom: 10px;
+    }
+
+    .features_picture-holder {
+        height: 100px;
+
+    }
+
 
 
 
