@@ -4,6 +4,41 @@
 
 
 
+// general styles
+
+.title-font-style {
+    display: block;
+    @include title-font-settings;
+
+}
+
+.subtitle-font-style {
+    display: block;
+    @include subtitle-font-settings;
+}
+
+.regular-text-font-style {
+    font-family: $primary-text-font;
+    color: #2C4058;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.italic-text-font-style {
+    font-family: $primary-text-font;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    font-style: italic;
+}
+
+.button-style {
+    @include regular-button;
+}
+
+
 // styles
 
 body {
@@ -22,8 +57,9 @@ body {
     height: 100vh;
     background-position: top center;
     background-size: 100%;
-    margin: 0 auto;
+    margin: 0 auto 130px;
     padding-top: 55px;
+    position: relative;
 
 
 }
@@ -32,25 +68,26 @@ body {
 // Swiper for welcome slider
 
 
-    .swiper {
-        width: calc(100% - 110px);
-        height: 250px;
-    }
+.swiper {
+    width: calc(95% - 110px);
+    height: 450px;
 
-    .swiper-slide {
-        text-align: center;
-        // background: rgb(255, 208, 208);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+}
 
-    .swiper-slide img {
-        display: block;
-        width: 80%;
-        height: 150px;
-        object-fit: cover;
-    }
+.swiper-slide {
+    text-align: center;
+    // background: rgb(255, 208, 208);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
 
 
 .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
@@ -60,10 +97,7 @@ body {
     width: 12px;
     height: 12px;
 
-    
 }
-
-
 
 
 .swiper-pagination-vertical.swiper-pagination-bullets,
@@ -79,6 +113,15 @@ body {
 .welcome-swiper_slide-title,
 .welcome-swiper_slide-subtitle {
     display: block;
+}
+
+
+.swiper-slide_information-holder {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .welcome-swiper_slide-title {
@@ -98,6 +141,107 @@ body {
     color: white;
 }
 
+.welcome-slide_arrow-icon_holder {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+}
+
+.welcome-slide_arrow-icon_item {
+    display: block;
+    width: 40px;
+    height: 40px;
+
+}
+
+.welcome-slide_arrow-icon_item:hover svg {
+    fill: #ffff
+}
+
+.welcome-slide_arrow-icon_item:hover .svg_arrow {
+    opacity: 0.4;
+}
+
+
+.whatwedo_section {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    align-items: center;
+
+}
+
+.whatwedo_section_title {
+    display: block;
+    position: relative;
+}
+
+.whatwedo_section_title:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #2C4058;
+    top: -30px;
+    left: 32%;
+
+}
+
+.whatwedo_section_content-holder {
+    width: 1170px;
+    height: 470px;
+    display: flex;
+    gap: 70px;
+
+}
+
+.whatwedo_section_picture-holder {
+    width: 630px;
+    height: 470px;
+    background-position: center;
+}
+
+.whatwedo_section_picture-1 {
+    background: url('../images/joel-filipe-151697 1.png') no-repeat;
+    box-shadow: -215px -55px #55B7FF;
+}
+
+.whatwedo_section_picture-2 {
+    background: url('../images/photos-1284iH4Hjf4mhNgW 1.png') no-repeat;
+    box-shadow: 215px -55px #7E5AFF;
+}
+.whatwedo_section_text-holder {
+    width: 480px;
+    height: 350px;
+}
+
+.whatwedo_section-title {
+    margin-bottom: 20px;
+}
+
+
+.whatwedo_section-text {
+    display: block;
+    width: 470px;
+    height: 85px;
+    margin-bottom: 40px;
+
+}
+
+.whatwedo_section-button {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.whatwedo_section_location-holder {
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.whatwedo_section_location-holder svg {
+    margin-right: 10px;
+}
 
 
 // .swiper-pagination-bullet-active {

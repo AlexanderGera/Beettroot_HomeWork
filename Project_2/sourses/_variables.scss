@@ -53,3 +53,17 @@ $title-font-color: #2C4058;
     color: $title-font-color;
     text-transform: uppercase;
 }
+
+
+@mixin regular-button {
+    width: 190px;
+    height: 50px;
+    border: 1px solid #2C4058;
+    font-size: $titels-text-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    background: none;
+    cursor: pointer;
+
+}
