@@ -1,4 +1,3 @@
-
 .header {
     width: 100%;
     max-width: 1170px;
@@ -45,7 +44,7 @@
     @include header-menu-font-settings;
 }
 
-.header_social-icons_holder{
+.header_social-icons_holder {
     display: flex;
     flex-direction: row;
 }
@@ -80,4 +79,3 @@
 //     margin: 5px auto;
 //     background-color: #000;
 // }
-
