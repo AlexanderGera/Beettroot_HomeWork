@@ -572,16 +572,30 @@ body {
 }
 
 .map_section {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    position: relative;
     width: 100vw;
     height: 850px;
     background: #E4E4E4;
     margin: 0 auto;
 }
 
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 100%;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 100%;
+    width: 100%;
+}
+
 .map_contact-holder {
+    position: absolute;
     width: 770px;
     height: 450px;
     background-color: #fff;
@@ -590,6 +604,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    left: 28%;
+    bottom: 0;
 }
 
 .map_section_title {
