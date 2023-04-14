@@ -572,13 +572,15 @@ body {
 }
 
 .map_section {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    position: relative;
     width: 100vw;
     height: 850px;
     margin: 0 auto;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+
 }
 
 //map style
@@ -588,6 +590,8 @@ body {
     height: 850px;
     position: absolute;
     top: 0;
+    
+
 
 }
 
@@ -597,7 +601,6 @@ body {
     height: 100%;
     width: 100%;
 }
-
 
 .gmap_canvas {
     overflow: hidden;
@@ -618,6 +621,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .map_section_title {
