@@ -1,0 +1,32 @@
+
+<svg width="1440px" height="541px" viewBox="896 -849 1440 541" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1440" height="540"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="19.9556776%" y1="90.3984797%" x2="7.85142627%" y2="53.2919787%" id="linearGradient-4">
+            <stop stop-color="#603068" offset="0%"></stop>
+            <stop stop-color="#FF3D7C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="10.2506941%" y1="62.2052412%" x2="34.1223825%" y2="109.596934%" id="linearGradient-5">
+            <stop stop-color="#603068" offset="0%"></stop>
+            <stop stop-color="#FF3D7C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Header-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(896.000000, -849.000000)">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Rectangle-1">
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+            <use fill="#341539" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+        <path d="M1156.66102,315.618298 C1062.08662,221.043901 1062.08512,67.7148671 1156.65836,-26.8583649 L2288.14164,-1158.34164 C2382.71349,-1252.9135 2536.04437,-1252.91291 2630.6183,-1158.33898 C2725.19269,-1063.76459 2725.19419,-910.435551 2630.62096,-815.862319 L1499.13768,315.62096 C1404.56582,410.192817 1251.23495,410.192225 1156.66102,315.618298 Z M1015.23966,457.039654 C1187.9182,629.718195 1467.88208,629.719277 1640.55904,457.042316 L2772.04232,-674.440963 C2944.72103,-847.119672 2944.71829,-1127.0817 2772.03965,-1299.76034 C2599.36111,-1472.43888 2319.39724,-1472.43996 2146.72028,-1299.763 L1015.237,-168.279721 C842.558291,4.39898784 842.561026,284.361018 1015.23966,457.039654 Z" id="Rectangle-Copy" fill="url(#linearGradient-4)" mask="url(#mask-2)"></path>
+        <path d="M1024.46112,424.213882 C877.686631,277.439398 877.685371,39.4786504 1024.46056,-107.29654 L2071.70346,-1154.53944 C2218.47646,-1301.31244 2456.44012,-1301.31264 2603.21388,-1154.53888 C2749.98837,-1007.7644 2749.98963,-769.803652 2603.21444,-623.028462 L1555.97154,424.214436 C1409.19853,570.98744 1171.23487,570.987641 1024.46112,424.213882 Z M854.755488,593.91951 C1095.25514,834.419163 1485.1784,834.418833 1725.67717,593.920064 L2772.92006,-453.322835 C3013.42149,-693.824257 3013.41942,-1083.7446 2772.91951,-1324.24451 C2532.41986,-1564.74417 2142.4966,-1564.74383 1901.99783,-1324.24507 L854.754934,-277.002168 C614.253511,-36.5007447 614.255576,353.419598 854.755488,593.91951 Z" id="Rectangle" fill="url(#linearGradient-5)" mask="url(#mask-2)"></path>
+        <rect id="Rectangle-4" fill="#341539" opacity="0" mask="url(#mask-2)" x="0" y="0" width="1440" height="70"></rect>
+    </g>
+</svg>
