@@ -15,8 +15,9 @@
 
 .title-decoration {
     position: relative;
-    display: block;
+    display: inline-block;
     margin-bottom: 60px;
+    text-align: center;
 }
 
 .title-decoration:before {
@@ -26,7 +27,8 @@
     height: 1px;
     background: #55B7FF;
     bottom: -24px;
-    left: 34%;
+    left: 50%;
+    transform: translateX(-50%);
     // transform: translateX(-50%);
 }
 
@@ -52,15 +54,21 @@
     @include button-regular-decoration;
 }
 
-body {
-    position: relative;
+
+.section_devider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(85, 183, 254, 0.5);
 }
 
-.intro_wrapper {
+
+// ends of general styles
+
+body {
+    position: relative;
     width: 100%;
-    border-bottom: $section-border-style;
-    margin-bottom: 50px;
 }
+
 
 .intro_information-holder {
     width: 100%;
@@ -100,13 +108,14 @@ body {
     aspect-ratio: 16/9;
 }
 
+
 .intro_products-wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: $section-border-style;
-    padding: 10px 0 75px 0;
+    padding: 75px 0;
+
 }
 
 .intro_products-holder {
@@ -128,11 +137,12 @@ body {
 
 .intro_products_item {
     width: 275px;
-    height: 470px;
+    height: 485px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: left;
+    gap: 10px;
     background-color: $header-background;
     border: $section-border-style;
     border-radius: 10px;
@@ -143,9 +153,16 @@ body {
 .intro_products_item_picture {
     width: 245px;
     height: 245px;
-    background: url(../images/PET_keg_small.jpg) center no-repeat;
-    background-size: 110%;
     border-radius: 10px;
+
+}
+
+.intro-products_item_text-holder {
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
 
@@ -201,6 +218,7 @@ body {
     display: flex;
     align-items: end;
     justify-content: center;
+    
 }
 
 .contacts_wrapper {
@@ -226,8 +244,14 @@ body {
     justify-content: center;
 }
 
+
+.map-icon-style {
+    color: #7E5AFe;
+}
+
 .contact-form_label {
     width: 100%;
+    min-width: 300px;
     outline: none;
     font-family: $regular-text-font;
     border: none;
@@ -240,7 +264,7 @@ body {
 }
 
 .contacts_column {
-    width: 300px;
+    min-width: 300px;
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -310,6 +334,9 @@ body {
 }
 
 
+
+
+
 //adopt. style for screen 1150px
 
 @media screen and (max-width: 1150px) {
@@ -320,15 +347,118 @@ body {
     }
 }
 
+// adopt. style for screen 1025px
+
+@media screen and (max-width: 1025px) {
+
+    .title-font-style {
+        font-size: 36px;
+        line-height: 48px;
+
+    }
 
 
+    .title-decoration {
+        margin-bottom: 50px;
+    }
 
-@media screen and (max-width: 730px) {
+    .footer_menu-links_holder {
+        display: none;
+    }
+
+    .footer_content-holder {
+        justify-content: space-around;
+    }
+
+}
+
+
+// adopt. style for screen 801px
+
+@media screen and (max-width: 801px) {
+
+    .title-font-style {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+}
+
+// adopt. style for screen 769px
+
+@media screen and (max-width: 769px) {
+
+    .intro_information-holder {
+        flex-direction: column;
+        margin-bottom: 45px;
+    }
+
+    .intro_text-holder,
+    .intro_video-holder {
+        width: 100%;
+    }
+
+    .intro_text-holder {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .intro_products-wrapper {
+        padding: 45px 0;
+    }
+
+}
+
+
+// adopt. style for screen 731px
+
+@media screen and (max-width: 731px) {
+
+    .pre-footer {
+        height: 775px;
+    }
 
     .contacts_column {
         align-items: center;
     }
 
+}
+
+
+// adopt. style for screen 481px
+
+@media screen and (max-width: 481px) {
+
+    .title-font-style {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .title-decoration {
+        margin-bottom: 40px;
+    }
+
+    .title-decoration:before {
+        bottom: -15px;
+
+    }
+
+    .regular-text-font-style {
+        font-size: 15px;
+    }
+
+}
+
+
+@media screen and (max-width: 340px) {
+    .contacts_column {
+        min-width: 280px;
+    }
+
+    .contact-form_label {
+        min-width: 250px;
+    }
 }
 
 

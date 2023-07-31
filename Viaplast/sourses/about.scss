@@ -1,0 +1,44 @@
+@import "_variables";
+
+
+.about_content-holder {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+
+}
+
+.about_text-holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+
+}
+
+.about-text-font-style {
+    max-width: 760px;
+    font-weight: 500;
+    padding: 0 15px;
+}
+
+.about_pictures-holder {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 15px;
+    flex-wrap: wrap;
+}
+
+.about_picture-intro {
+    width: 350px;
+    min-width: 310px;
+    aspect-ratio: 1 / 1;
+}
