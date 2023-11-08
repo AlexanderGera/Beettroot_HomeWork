@@ -14,9 +14,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 
-
-
-
 //script for menu hamburger and adopt. menu
 
 const hamburger = document.querySelector(".header_menu-hamburger");
@@ -40,65 +37,47 @@ function closeMenu() {
 
 
 
+// new window open in button click
 
+function buttonLinkOpen(url) {
 
+    window.open(url, "_self");
 
-//slider
-
-
-
-
-// let holder = document.querySelector('.intro-products_slider_holder');
-// let track = document.querySelector('.slider-track');
-// let items = track.querySelectorAll('.slider-track_item');
-
-// let btnPrev = document.querySelector('.slider-button_prev');
-// let btnNext = document.querySelector('.slider-button_next');
-
-
-// // получаем ширину элемента
-
-// let findTrackItems = track.querySelector('.slider-track_item');
-// let trackItemWidth = findTrackItems.offsetWidth;
-
-// // получаем ширину элемента end
-
-// let position = 0;
+}
 
 
 
 
-// btnNext.addEventListener('click', () => {
-//     position -= trackItemWidth;
-//     if (position < -trackItemWidth * (items.length - 4)) {
-//         position = trackItemWidth;
-//     } else {
-//         setPosition();
-//     }
+// Gallery big image open
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    let previewLinks = document.querySelectorAll('.item_preview-link');
 
-// });
-
-// btnPrev.addEventListener('click', () => {
-//     position += trackItemWidth;
-//     if (position > 0) {
-//         position = -trackItemWidth * (items.length - 3);
-//     } else {
-//         setPosition();
-//     }
-
-// });
-
-
+    previewLinks.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            let bigPicture = document.querySelector('.item_big-picture');
+            let previewImageSrc = this.href;
+            bigPicture.src = previewImageSrc;
+        });
+    });
+});
 
 
-
-// let setPosition = () => {
-//     track.style.transform = `translateX(${position}px)`;
-
-// };
+//form letter sending
 
 
+$('form').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+    }).done(function() {
+        $(this).find("input, textarea").val("");
 
-
+        $('form').trigger('reset');
+    });
+    return false;
+});

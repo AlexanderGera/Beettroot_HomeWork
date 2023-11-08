@@ -1,0 +1,143 @@
+.product-list_items-holder {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.catalog_item {
+    height: 560px !important;
+}
+
+.catalog_item-picture {
+    height: 285px !important;
+
+}
+
+//item description
+
+.catalog-unit_content-holder {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center
+}
+
+.title-font-style.catalog-product {
+    text-transform: none;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.catalog-unit_content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding: 0 15px 50px;
+    gap: 15px;
+    flex-wrap: wrap;
+
+}
+
+.catalog-unit_item_pictures-holder {
+    width: calc((60%) - 15px);
+    max-width: 750px;
+    aspect-ratio: 4/3;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.catalog-unit_item_text-holder {
+    width: calc((43%) - 15px);
+    min-width: 215px;
+    max-width: 450px;
+    padding: 10px 15px;
+
+}
+
+.catalog-unit_item_big-picture,
+.catalog-unit_item_text-holder,
+.catalog-unit_item_preview-picture {
+    border-radius: 12px;
+    border: $section-border-style;
+}
+
+
+.catalog-unit_item_big-picture,
+.catalog-unit_item_preview-picture,
+.item_preview-picture {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+.catalog-unit_item_big-picture {
+    min-width: 215px;
+    max-width: 695px;
+}
+
+.item_big-picture {
+    width: 100%;
+}
+
+
+.catalog-unit_item_preview-picture-holder {
+    min-width: 295px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+// .catalog-unit_item_preview-picture {
+//     position: relative;
+// }
+
+.catalog-unit_item_preview-picture,
+.catalog-unit_item_preview-picture img {
+    width: 215px;
+}
+
+
+.item_preview-link {
+    display: inline-block;
+    position: relative;
+}
+
+.item_preview-link:before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: url(../images/icons/zoom-icon.svg) no-repeat;
+    top: 35%;
+    left: 35%;
+    opacity: 1;
+    z-index: 9;
+
+}
+
+.item_preview-link:focus:before {
+    opacity: 0.6;
+}
+
+.item_preview-picture {
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.item_preview-link:hover .item_preview-picture {
+    opacity: 1;
+}
+
+.item_preview-link:focus .item_preview-picture {
+    opacity: 1;
+}
+
+

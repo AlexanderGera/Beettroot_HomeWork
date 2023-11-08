@@ -11,9 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
-
 
 .products_header {
     width: 100%;
@@ -23,7 +21,6 @@
     align-items: center;
     padding: 0 15px;
     margin-bottom: 50px;
-
 }
 
 .products_items-holder {
@@ -31,9 +28,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
-
 }
 
 .products_item {
@@ -43,7 +37,10 @@
     flex-wrap: wrap;
     gap: 95px;
     padding: 50px 15px;
-    
+}
+
+.products_item-reverse {
+    flex-wrap: wrap-reverse;
 }
 
 .item_text-description-holder {
@@ -54,9 +51,6 @@
     justify-content: center;
     align-items: flex-start;
     gap: 35px;
-    
-
-
 }
 
 .item-title {
@@ -76,4 +70,53 @@
     min-width: 295px;
     aspect-ratio: 1 / 1;
     border-radius: 15px;
+}
+
+
+//style for screen changin
+
+@media screen and (max-width: 884px) {
+
+    .title-decoration {
+        margin-bottom: 30px;
+    }
+
+    .item_text-description-holder {
+        align-items: center;
+    }
+
+    .item-description {
+        text-align: center;
+    }
+}
+
+
+// adopt. style for screen 769px
+
+@media screen and (max-width: 769px) {
+
+    .products_header {
+        margin-bottom: 35px;
+    }
+
+    .products_item {
+        gap: 35px;
+        padding: 35px 15px;
+    }
+
+    .item_text-description-holder {
+        gap: 20px;
+    }
+
+}
+
+
+// adopt. style for screen 376px
+
+@media screen and (max-width: 376px) {
+
+    .item-picture {
+        width: 330px;
+    }
+
 }

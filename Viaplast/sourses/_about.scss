@@ -10,7 +10,6 @@
     align-items: center;
     
     
-
 }
 
 .about_text-holder {
@@ -23,7 +22,7 @@
 
 .about-text-font-style {
     max-width: 760px;
-    font-weight: 500;
+    font-weight: 500 !important;
     padding: 0 15px;
 }
 
@@ -41,4 +40,5 @@
     width: 350px;
     min-width: 310px;
     aspect-ratio: 1 / 1;
+    border-radius: 12px;
 }

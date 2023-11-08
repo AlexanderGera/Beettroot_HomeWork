@@ -1,15 +1,18 @@
+//styles import
 @import "_variables";
-
 @import "_header";
+@import "_about";
+@import "_catalog";
 
-// @import "_slider-intro";
+//google-fonts import
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
 
 
 // fonts style and bottom style
 
 .title-font-style {
     @include title-font-settings;
-
 
 }
 
@@ -136,7 +139,7 @@ body {
 
 
 .intro_products_item {
-    width: 275px;
+    width: 285px;
     height: 485px;
     display: flex;
     flex-direction: column;
@@ -145,7 +148,7 @@ body {
     gap: 10px;
     background-color: $header-background;
     border: $section-border-style;
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 10px 15px;
     margin-bottom: 25px;
 }
@@ -153,7 +156,7 @@ body {
 .intro_products_item_picture {
     width: 245px;
     height: 245px;
-    border-radius: 10px;
+    border-radius: 12px;
 
 }
 
@@ -177,7 +180,7 @@ body {
 }
 
 .item_link-follow:hover {
-    letter-spacing: 0.2em;
+    letter-spacing: 0.20em;
 }
 
 .item_icon-follow {
@@ -218,7 +221,7 @@ body {
     display: flex;
     align-items: end;
     justify-content: center;
-    
+
 }
 
 .contacts_wrapper {
@@ -258,13 +261,19 @@ body {
     border-bottom: 1px solid black;
 }
 
+textarea.contact-form_label {
+    height: 80px;
+    overflow: auto;
+    resize: none;
+}
+
 .contact-form_label::placeholder {
     color: rgba(75, 85, 98, 0.6);
 
 }
 
 .contacts_column {
-    min-width: 300px;
+    min-width: 350px;
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -277,7 +286,7 @@ body {
     position: absolute;
     bottom: -225px;
     border-bottom: $section-border-style;
-    background: url(../images/city_bg.png),
+    background: url(../images/icons/city_bg.png),
         linear-gradient(251.06deg, #3C7FD4 -2.19%, #55B7FF 103.21%);
     background-position: bottom center;
     background-size: cover;
@@ -373,6 +382,17 @@ body {
 }
 
 
+// adopt. style for screen 830px
+
+@media screen and (max-width: 830px) {
+
+    .pre-footer {
+        height: 775px;
+    }
+
+}
+
+
 // adopt. style for screen 801px
 
 @media screen and (max-width: 801px) {
@@ -380,6 +400,10 @@ body {
     .title-font-style {
         font-size: 32px;
         line-height: 42px;
+    }
+
+    .contacts_column {
+        align-items: center;
     }
 
 }
@@ -411,21 +435,6 @@ body {
 }
 
 
-// adopt. style for screen 731px
-
-@media screen and (max-width: 731px) {
-
-    .pre-footer {
-        height: 775px;
-    }
-
-    .contacts_column {
-        align-items: center;
-    }
-
-}
-
-
 // adopt. style for screen 481px
 
 @media screen and (max-width: 481px) {
@@ -448,8 +457,12 @@ body {
         font-size: 15px;
     }
 
-}
+    .contacts_column {
+        min-width: 300px;
 
+    }
+
+}
 
 @media screen and (max-width: 340px) {
     .contacts_column {

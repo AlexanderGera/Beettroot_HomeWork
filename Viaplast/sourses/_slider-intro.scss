@@ -1,20 +1,19 @@
 .intro_products_slider-holder {
-    width: 100%;
+    width: 80%;
     height: 450px;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0px auto;
     background-color: #ffff;
     // display: flex;
     // justify-content: space-between;
     // align-items: center;
+    overflow: hidden;
     padding: 0 15px;
 
 }
 
 
-.intro_products_slider_holder {
-    overflow: hidden;
-}
+
 
 .slider-track {
     display: flex;

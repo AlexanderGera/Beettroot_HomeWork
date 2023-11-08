@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 .header_bg {
   width: 100%;
   height: 120px;
-  background: url(../images/city_bg.png), linear-gradient(251.06deg, #3C7FD4 -2.19%, #55B7FF 103.21%);
+  background: url(../images/icons/city_bg.png), linear-gradient(251.06deg, #3C7FD4 -2.19%, #55B7FF 103.21%);
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -296,6 +297,263 @@
     font-size: 16px;
   }
 }
+.about_content-holder {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_text-holder {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 50px;
+}
+
+.about-text-font-style {
+  max-width: 760px;
+  font-weight: 500 !important;
+  padding: 0 15px;
+}
+
+.about_pictures-holder {
+  width: 100%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  padding: 50px 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about_picture-intro {
+  width: 350px;
+  min-width: 310px;
+  aspect-ratio: 1/1;
+  border-radius: 12px;
+}
+
+.product-list_items-holder {
+  width: 100%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 15px;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog_item {
+  height: 560px !important;
+}
+
+.catalog_item-picture {
+  height: 285px !important;
+}
+
+.catalog-unit_content-holder {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title-font-style.catalog-product {
+  text-transform: none;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.catalog-unit_content {
+  width: 100%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  padding: 0 15px 50px;
+  gap: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog-unit_item_pictures-holder {
+  width: calc(60% - 15px);
+  max-width: 750px;
+  aspect-ratio: 4/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.catalog-unit_item_text-holder {
+  width: calc(43% - 15px);
+  min-width: 215px;
+  max-width: 450px;
+  padding: 10px 15px;
+}
+
+.catalog-unit_item_big-picture,
+.catalog-unit_item_text-holder,
+.catalog-unit_item_preview-picture {
+  border-radius: 12px;
+  border: 1px solid rgba(85, 183, 255, 0.5);
+}
+
+.catalog-unit_item_big-picture,
+.catalog-unit_item_preview-picture,
+.item_preview-picture {
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.catalog-unit_item_big-picture {
+  min-width: 215px;
+  max-width: 695px;
+}
+
+.item_big-picture {
+  width: 100%;
+}
+
+.catalog-unit_item_preview-picture-holder {
+  min-width: 295px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog-unit_item_preview-picture,
+.catalog-unit_item_preview-picture img {
+  width: 215px;
+}
+
+.item_preview-link {
+  display: inline-block;
+  position: relative;
+}
+
+.item_preview-link:before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: url(../images/icons/zoom-icon.svg) no-repeat;
+  top: 35%;
+  left: 35%;
+  opacity: 1;
+  z-index: 9;
+}
+
+.item_preview-link:focus:before {
+  opacity: 0.6;
+}
+
+.item_preview-picture {
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.item_preview-link:hover .item_preview-picture {
+  opacity: 1;
+}
+
+.item_preview-link:focus .item_preview-picture {
+  opacity: 1;
+}
+
+.intro_products_slider-holder {
+  width: 80%;
+  height: 450px;
+  max-width: 900px;
+  margin: 0px auto;
+  background-color: white;
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+.slider-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #33cc77;
+}
+
+.intro-products_slider_buttons-holder {
+  text-align: center;
+}
+
+.slider-track_item {
+  min-width: 297px;
+  height: 400px;
+}
+
+.slider-track_item:nth-child(3n+1) {
+  background-color: red;
+}
+
+.slider-track_item:nth-child(3n+2) {
+  background-color: green;
+}
+
+.slider-track_item:nth-child(3n+3) {
+  background-color: blue;
+}
+
+@media screen and (max-width: 1200px) {
+  .intro-products_slider_holder {
+    width: 900px;
+  }
+}
 .title-font-style {
   font-family: "Montserrat", sans-serif;
   font-size: 38px;
@@ -358,6 +616,7 @@
 }
 
 .button-regular-decoration {
+  display: block;
   width: 225px;
   height: 50px;
   background: none;
@@ -448,7 +707,7 @@ body {
 }
 
 .intro_products_item {
-  width: 275px;
+  width: 285px;
   height: 485px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -466,7 +725,7 @@ body {
   gap: 10px;
   background-color: #f3f3f3;
   border: 1px solid rgba(85, 183, 255, 0.5);
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 10px 15px;
   margin-bottom: 25px;
 }
@@ -474,7 +733,7 @@ body {
 .intro_products_item_picture {
   width: 245px;
   height: 245px;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .intro-products_item_text-holder {
@@ -624,6 +883,12 @@ body {
   border-bottom: 1px solid black;
 }
 
+textarea.contact-form_label {
+  height: 80px;
+  overflow: auto;
+  resize: none;
+}
+
 .contact-form_label::-webkit-input-placeholder {
   color: rgba(75, 85, 98, 0.6);
 }
@@ -645,7 +910,7 @@ body {
 }
 
 .contacts_column {
-  min-width: 300px;
+  min-width: 350px;
   height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -665,7 +930,7 @@ body {
   position: absolute;
   bottom: -225px;
   border-bottom: 1px solid rgba(85, 183, 255, 0.5);
-  background: url(../images/city_bg.png), linear-gradient(251.06deg, #3C7FD4 -2.19%, #55B7FF 103.21%);
+  background: url(../images/icons/city_bg.png), linear-gradient(251.06deg, #3C7FD4 -2.19%, #55B7FF 103.21%);
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -760,10 +1025,20 @@ body {
         justify-content: space-around;
   }
 }
+@media screen and (max-width: 830px) {
+  .pre-footer {
+    height: 775px;
+  }
+}
 @media screen and (max-width: 801px) {
   .title-font-style {
     font-size: 32px;
     line-height: 42px;
+  }
+  .contacts_column {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (max-width: 769px) {
@@ -791,16 +1066,6 @@ body {
     padding: 45px 0;
   }
 }
-@media screen and (max-width: 731px) {
-  .pre-footer {
-    height: 775px;
-  }
-  .contacts_column {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
 @media screen and (max-width: 481px) {
   .title-font-style {
     font-size: 28px;
@@ -814,6 +1079,9 @@ body {
   }
   .regular-text-font-style {
     font-size: 15px;
+  }
+  .contacts_column {
+    min-width: 300px;
   }
 }
 @media screen and (max-width: 340px) {
